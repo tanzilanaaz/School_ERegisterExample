@@ -13,7 +13,8 @@ namespace School_ERegisterExample
 
         static void Main(string[] args)
         {
-            while (true)
+            bool continueLoop = true;
+            while (continueLoop)
             {
                 Console.WriteLine("1. Add Student \n2. View Students \n3. Update Student \n4. Delete Student \n5. Get Student by UniqueId \n6. Exit");
                 Console.Write("Enter your choice: ");
@@ -43,7 +44,7 @@ namespace School_ERegisterExample
                         break;
 
                     case "6":
-                        Environment.Exit(0);
+                        continueLoop = false;
                         break;
 
                     default:
